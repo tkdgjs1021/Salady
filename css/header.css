@@ -1,0 +1,227 @@
+@charset 'utf-8';
+@font-face {
+    font-family: 'TmoneyRoundWindExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TmoneyRoundWindRegular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Header */
+#wrap{
+    height: 650px;
+    background: url(../images/sub1.png)no-repeat center center;
+}
+#header{
+    height: 182px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 100px 0 100px;
+    z-index: 999;
+}
+#header>h2{
+    float: left;
+    margin-bottom: 20px;
+    width: 31%;
+}
+
+#header #gnb{
+    margin: 0 auto;
+    float: left;
+    height: 130px;
+    line-height: 130px;
+    width: 39.5%;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'TmoneyRoundWindRegular';
+}
+#gnb>li{
+    float: left;
+    width: 20%;
+}
+#gnb>li>a{
+    color: white;
+    display: block;
+}
+#gnb i{
+    color: #68b445;
+    transform: rotateY(180deg);
+}
+#gnb>li:hover{
+    height: 142px;
+    line-height: 142px;
+}
+#gnb li:hover .sub{
+    display: block;
+    background: white;
+    transition: all 0.5s;
+}
+.sub>li:hover a{
+    transition: all 0.5s;
+    color: #68b445;
+}
+
+#gnb:hover ~.border{
+    display: none;
+}
+
+.sub{
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.sub>li{
+    height: 65px;
+    line-height: 65px;
+}
+.sub>li>a{
+    display: block;
+}
+
+#header h3{
+    float: right;
+    height: 130px;
+    line-height: 130px;
+    width: 150px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'TmoneyRoundWindExtraBold';
+}
+#header h3 a{
+    color: white;
+    border: 2px solid white;
+    padding: 12px 20px 12px 20px;  
+}
+#header .btn{
+    float: right;
+    margin-left: 40px;
+    height: 130px;
+    padding-top: 39px;
+    display: none;
+    _visibility: hidden;
+}
+.border{
+    clear: both;
+    border: 1px solid white;
+}
+
+/* 메뉴버튼 클릭시 Header */
+#gnbon{
+    display: none;
+    margin-top: 100px;
+    font-size: 24px;
+    font-family: 'TmoneyRoundWindRegular';
+}
+#gnbon>li{
+    height: 120px;
+}
+#gnbon>li>a:hover{
+    font-weight: bold;
+}
+#gnbon>li>a{
+    color: black;
+    display: block;
+    overflow: hidden;
+}
+.down{
+    font-family: 'TmoneyRoundWindRegular';
+    float: right;
+    font-size: 24px;
+}
+#gnbon>li>a>i{
+    color: #68b445;
+    transform: rotateY(180deg);
+}
+.subon{
+    display: none;
+    font-size: 16px;
+}
+#gnbon>li>.on{
+    display: block;
+}
+.subon>li{
+    height: 30px;
+}
+.subon>li>a{
+    display: block;
+}
+.top{
+    position: fixed;
+    top: 81.5%;
+    right: 100px;
+    z-index: 999;
+}
+.top img{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.top button{
+    background-color: #68b445;
+    width: 40px; height: 70px;
+    border-radius: 25px;
+    color: white;
+}
+
+
+/* 767px~1371px */
+@media screen and (min-width:767px) and (max-width:1371px){
+    /* Header */
+    #gnb{
+        display: none;
+    }
+    #header .btn{
+        display: block;
+    }
+}
+
+@media screen and (max-width:766px){
+     /* Header */
+    #gnb{
+        display: none;
+    }
+    #header>h2{
+        float: left;
+        margin-top: 20px;
+        width: 40%;
+    }
+    #header>h2>a>img{
+        width: 80%;
+    }
+    #header h3{
+        float: right;
+        height: 130px;
+        line-height: 130px;
+        width: 100px;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'TmoneyRoundWindExtraBold';
+    }
+    #header h3 a{
+        color: white;
+        border: 2px solid white;
+        padding: 8px 12px 8px 12px;  
+    }
+    #header .btn{
+        text-align: right;
+        float: right;
+        margin-left: 0px;
+        height: 90px;
+        padding-top: 48px;
+        display: block;
+    }
+    .btn>a>img{
+        width: 50%;
+    }
+    .border{
+        clear: both;
+        border: 1px solid white;
+    }
+}

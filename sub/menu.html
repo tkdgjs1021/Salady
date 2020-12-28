@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salady</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/aos.css">
+    
+    <script src="https://kit.fontawesome.com/6411820a12.js" crossorigin="anonymous"></script>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/jquery.mousewheel.min.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/menu.js"></script>
+    <script>
+        $(function(){
+            $("#wrap").load("header.html");
+            $(".footer").load("footer.html");
+            
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">  
+       
+    </div>
+        <div class="menuname" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
+            메뉴
+        </div>
+        <div class="location" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
+            <p>HOME  <i class="fas fa-angle-right"></i>  메뉴  <i class="fas fa-angle-right"></i>  메뉴 소개</p>
+        </div>
+        <div class="slogan" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
+            메뉴 소개
+        </div>
+        <p class="borderline"></p>
+        <div id="section1">
+            <div id="sec1">
+                <a href="#warm">
+                   <div class="b1" data-aos="fade-right" data-aos-duration="800">
+                    <img src="../images/menu-img1.jpg" alt="">
+                        <p>싱싱한 채소와 고소한 곡물이 반반인 샐러드</p>
+                    </div>
+                </a>
+                <a href="#vege">
+                    <div class="b2" data-aos="fade-left" data-aos-duration="800">
+                        <img src="../images/menu-img6.jpg" alt="">
+                        <p>싱그러운 채소로만 이루어진 샐러드</p>
+                    </div>
+                </a>
+            </div>
+            <div class="b3" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="800">
+                <p>샐러디가 직접 선보이는 자체 드레싱</p>
+                <p><a href="#d4">View</a></p>
+            </div>
+            <div id="sec2">
+                <a href="#burger">
+                    <div class="b4" data-aos="fade-right" data-aos-delay="500" data-aos-duration="800">
+                        <img src="../images/menu-img13.jpg" alt="">
+                        <p>건강한 재료의 패티들만 감싸 푸짐한 버거</p>
+                    </div>
+                </a>
+                <a href="#lap">
+                    <div class="b5" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
+                        <img src="../images/menu-img16.jpg" alt="">
+                        <p>아삭한 식감과 부드러운 맛을 지켜낸 랩</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+<!--        슬라이드배너-->
+        <div id="section2">   
+            <div id="warm" data-aos="fade-right" data-aos-duration="800">
+                <h3>웜 샐러드</h3>
+                <div class="banner ban1">
+                    <ul class="clear">
+                        <li><img src="../images/menu-img1.jpg" alt=""><p class="pp1">칠리베이컨</p><p class="pp2">베이컨, 에그, 옥수수, 양파플레이크(기본 드레싱: 크리미칠리)</p></li>
+                        <li><img src="../images/menu-img2.jpg" alt=""><p class="pp1">우삼겹</p><p class="pp2">우삼겹, 양파, 견과류(기본 드레싱: 오리엔탈)</p></li>
+                        <li><img src="../images/menu-img3.jpg" alt=""><p class="pp1">치킨소시지</p><p class="pp2">치킨소시지, 에그, 옥수수(기본 드레싱: 허니머스타드)</p></li>
+                        <li><img src="../images/menu-img4.jpg" alt=""><p class="pp1">단호박두부</p><p class="pp2">단호박, 두부, 칙피, 옥수수(기본 드레싱: 오리엔탈)</p></li>
+                        <li><img src="../images/menu-img5.jpg" alt=""><p class="pp1">언리미트</p><p class="pp2">언리미트, 칙피, 양파, 올리브(기본 드레싱: 이탈리안허브)</p></li>
+                    </ul>
+                    <button id="prev" class="prev1"><img src="../images/leftg.png" alt=""></button>
+                    <button id="next" class="next1"><img src="../images/right.png" alt=""></button>
+                </div>
+            </div>
+            <div id="vege" data-aos="fade-left" data-aos-duration="800">
+                <h3>베지 샐러드</h3>
+                <div class="banner ban2">
+                    <ul class="clear">
+                        <li><img src="../images/menu-img6.jpg" alt=""><p class="pp1">시저치킨</p><p class="pp2">치킨, 크랜베리(기본 드레싱: 시저)</p></li>
+                        <li><img src="../images/menu-img7.jpg" alt=""><p class="pp1">탄단지</p><p class="pp2">치킨, 스윗포테이토, 견과류, 크랜베리(기본 드레싱: 오리엔탈)</p></li>
+                        <li><img src="../images/menu-img8.jpg" alt=""><p class="pp1">콥</p><p class="pp2">베이컨, 에그, 옥수수, 올리브, 양파(기본 드레싱: 시저)</p></li>
+                        <li><img src="../images/menu-img9.jpg" alt=""><p class="pp1">리코타치즈</p><p class="pp2">리코타치즈, 토마토, 견과류, 크랜베리(기본 드레싱: 발사믹)</p></li>
+                        <li><img src="../images/menu-img10.jpg" alt=""><p class="pp1">연어</p><p class="pp2">연어, 양파(기본 드레싱: 레몬)</p></li>
+                    </ul>
+                    <button id="prev" class="prev2"><img src="../images/leftg.png" alt=""></button>
+                    <button id="next" class="next2"><img src="../images/right.png" alt=""></button>
+                </div>
+            </div>
+            <div id="burger" data-aos="fade-right" data-aos-duration="800">
+                <h3>버거</h3>
+                <div class="banner ban3">
+                    <ul class="clear">
+                        <li><img src="../images/menu-img11.jpg" alt=""><p class="pp1">치킨토마토 </p><p class="pp2">치킨, 토마토, 크림치즈, 채소, 곡물빵</p></li>
+                        <li><img src="../images/menu-img12.jpg" alt=""><p class="pp1">에그베이컨</p><p class="pp2">에그, 베이컨, 크림치즈, 채소, 곡물빵</p></li>
+                        <li><img src="../images/menu-img13.jpg" alt=""><p class="pp1">크리미포테이토</p><p class="pp2">크리미포테이토, 양파플레이크, 크림치즈, 채소, 곡물빵</p></li>
+                        <li><img src="../images/menu-img14.jpg" alt=""><p class="pp1">샬롯연어</p><p class="pp2">연어, 양파, 크림치즈, 채소, 곡물빵</p></li>
+                    </ul>
+                    <button id="prev" class="prev3"><img src="../images/leftg.png" alt=""></button>
+                    <button id="next" class="next3"><img src="../images/right.png" alt=""></button>
+                </div>
+            </div>
+            <div id="lap" data-aos="fade-left" data-aos-duration="800">
+                <h3>랩</h3>
+                <div class="banner ban4">
+                    <ul class="clear">
+                        <li><img src="../images/menu-img15.jpg" alt=""><p class="pp1">시저치킨</p><p class="pp2">치킨, 크랜베리, 채소, 또띠아</p></li>
+                        <li><img src="../images/menu-img16.jpg" alt=""><p class="pp1">멕시칸</p><p class="pp2">그라운드 비프, 또띠아칩, 사워크림, 채소, 또띠아</p></li>
+                        <li><img src="../images/menu-img17.jpg" alt=""><p class="pp1">크랜베리그릭</p><p class="pp2">크랜베리, 올리브, 토마토, 견과류, 크림치즈, 채소, 또띠아</p></li>
+                        <li><img src="../images/menu-img18.jpg" alt=""><p class="pp1">샬롯연어</p><p class="pp2">연어, 양파, 크림치즈, 채소, 곡물빵</p></li>
+                        <li><img src="../images/menu-img19.jpg" alt=""><p class="pp1">칠리베이컨</p><p class="pp2">베이컨, 에그, 옥수수, 양파플레이크, 채소, 곡물, 또띠아</p></li>
+                        <li><img src="../images/menu-img20.jpg" alt=""><p class="pp1">우삼겹</p><p class="pp2">우삼겹, 양파, 견과류, 채소, 곡물, 또띠아</p></li>
+                        <li><img src="../images/menu-img21.jpg" alt=""><p class="pp1">치킨소시지</p><p class="pp2">치킨소시지, 에그, 옥수수, 채소, 곡물, 또띠아</p></li>
+                        <li><img src="../images/menu-img22.jpg" alt=""><p class="pp1">언리미트</p><p class="pp2">언리미트, 양파, 채소, 곡물, 또띠아</p></li>
+                    </ul>
+                    <button id="prev" class="prev4"><img src="../images/leftg.png" alt=""></button>
+                    <button id="next" class="next4"><img src="../images/right.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+
+        
+<!--        Do Eat Yourself-->
+       <div id="section3">
+           <h1>Do Eat Yourself</h1>
+           <h2>나만의 재료와 드레싱으로 기호에 맞게 커스터마이징(customizing) 해서 즐기세요!</h2>
+           <div class="d1">
+               <div class="p1"><h2>나만의 웜 샐러드</h2><h3>채소 50% + 곡물 50%</h3></div>
+               <div class="p2"><h2>나만의 베지 샐러드</h2><h3>채소 100%</h3></div>
+           </div>
+           <div class="d2">
+               <h2>메인 재료</h2>
+               <h3>*재료 추가는 메인재료와 서브재료 포함 최대 5개까지 가능합니다.</h3>
+               <ul class="u1">
+                   <li>치킨</li>
+                   <li>치킨소시지</li>
+                   <li>에그</li>
+                   <li>베이컨</li>
+               </ul>
+               <ul class="u2">
+                   <li>우삼겹</li>
+                   <li>연어</li>
+                   <li>그라운드 비프</li>
+                   <li>스윗 포테이토</li>
+               </ul>
+               <ul class="u3">
+                   <li>크리미포테이토</li>
+                   <li>두부</li>
+                   <li>리코타치즈</li>
+                   <li>단호박</li>
+                   <li>언리미트</li>
+               </ul>
+           </div>
+           <div class="d3">
+               <h2>서브 재료</h2>
+               <h3>*재료 추가는 메인재료와 서브재료 포함 최대 5개까지 가능합니다.</h3>
+               <ul class="u4">
+                   <li>크랜베리</li>
+                   <li>옥수수</li>
+                   <li>양파</li>
+                   <li>양파플레이크</li>
+                   <li>토마토</li>
+               </ul>
+               <ul class="u5">
+                   <li>칙피</li>
+                   <li>올리브</li>
+                   <li>견과류</li>
+                   <li>또띠아칩</li>
+                   <li>사워크림</li>
+               </ul>
+           </div>
+           <div id="d4">
+               <h2>드레싱</h2>
+               <h3>*샐러디 모든 메뉴들은 드레싱 변경이 가능하며, 주문 시 선택한 드레싱을 말씀해주세요.</h3>
+               <ul class="u6">
+                   <li>시저<p>크리미하고 짭쪼름한 드레싱<br>(*마요네즈, 엔쵸비)</p></li>
+                   <li>오리엔탈<p>오리엔탈간장을 기본으로 만든 고소한 드레싱<br>(*간장, 식초, 참깨)</p>
+                   </li>
+                   <li>허니머스타드<p>머스타드소스에 꿀을 첨가한 달콤한 드레싱<br>(*머스타드소스, 꿀)</p>
+                   </li>
+               </ul>
+               <ul class="u7">
+                   <li>크리미칠리<p>한국인의 입맛에 맞는 <br>매콤달콤한 드레싱<br>(*칠리소스, 마요네즈)</p>
+                   </li>
+                   <li>발사믹<p>발사믹 식초에 올리브오일이 <br>잘 어우러진 드레싱<br>(*발사믹식초, 올리브오일)</p>
+                   </li>
+                   <li>레몬<p>레몬의 상큼한 향이 느껴지는 <br>달콤한 드레싱<br>(*레몬즙, 올리브오일)</p>
+                   </li>
+                   <li>이탈리안허브<p>산뜻한 허브 향이 올리브오일과 <br>잘 어우러지는 드레싱<br>(*허브, 올리브오일)</p>
+                   </li>
+               </ul>
+           </div>
+       </div>
+        
+        
+    <div class="footer">
+        
+    </div>
+    
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

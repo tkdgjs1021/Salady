@@ -1,0 +1,262 @@
+@charset 'utf-8';
+@font-face {
+    font-family: 'TmoneyRoundWindExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TmoneyRoundWindRegular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.menuname{
+    font-family: 'TmoneyRoundWindExtraBold';
+    color: white;
+    font-size: 72px;
+    position: absolute;
+    top: 372px;
+    left: 46%;
+}
+
+/* Section */
+.location{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #999999;
+}
+.slogan{
+    font-family: 'TmoneyRoundWindExtraBold';
+    font-size: 48px;
+    color: #505050;
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+.borderline{
+    width: 250px;
+    margin: 0 auto;
+    height: 2px;
+    background: black;
+    margin-bottom: 50px;
+}
+.text{
+    background-color: #ffb8b8;
+    border-radius: 30px;
+    margin: 0 auto;
+    width: 1200px; 
+    height: 554px;
+    margin-bottom: 200px;
+}
+.text h2{
+    padding: 70px 0 50px 0;
+    text-align: center;
+    color: black;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+.text1{
+    padding-bottom: 50px;
+    text-align: center;
+    color: black;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.text2{
+    padding-bottom: 50px;
+    text-align: center;
+    color: black;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+.text3{
+    padding-bottom: 70px;
+    text-align: center;
+    color: black;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+#content{
+    position: relative;
+    margin-bottom: 200px;
+    height: 707px;
+}
+.box1{
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    top: 0px;
+    left: 18.7%;
+    background-color: #68b445;
+    z-index: 9;
+}
+.box2{
+    z-index: 10;
+    text-align: center; 
+    position: relative;
+    top: 80px;
+}
+.box3{
+    z-index: 9;
+    width: 210px;
+    height: 350px;
+    position:absolute;
+    top: 357px;
+    right: 18.7%;
+    background-color: #ed1f27;
+}
+.borderline2{
+    width: 250px;
+    margin: 0 auto;
+    height: 2px;
+    background: black;
+    margin-bottom: 230px;
+}
+#history{
+    margin-bottom: 200px;
+    position: relative;
+}
+.historyimg{
+    text-align: center;
+    position: relative;
+}
+.historyimg img{
+    width: 90%;
+}
+.pp{
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    position: absolute;
+    color: #505050;
+}
+.p1, .p4, .p5, .p8{
+    top: 120px;
+}
+.p1{
+    left: 12.6%;
+}
+.p4{
+    left: 43%;
+}
+.p5{
+    left: 50.5%;
+}
+.p8{
+    left: 77.3%;
+}
+
+.p2, .p3, .p6, .p7{
+    top: -120px;
+}
+.p2{
+    left: 27%;
+}
+.p3{
+    left: 34.5%;
+}
+.p6{
+    left: 56.5%;
+}
+.p7{
+    left: 66.5%;
+}
+
+
+
+/* 767px~1371px */
+@media screen and (min-width:767px) and (max-width:1371px){
+    .menuname{
+        left: 44%;
+    }
+    .box1{
+        width: 500px;
+        height: 350px;
+        position: absolute;
+        top: 0px;
+        left: 8%;
+        background-color: #68b445;
+        z-index: 9;
+    }
+    .box3{
+        z-index: 9;
+        width: 200px;
+        height: 350px;
+        position:absolute;
+        top: 357px;
+        right: 9%;
+        background-color: #ed1f27;
+    }
+    .pp{
+        font-size: 14px;
+    }
+}
+
+/* ~766px */
+@media screen and (max-width:766px){
+    .menuname{
+        left: 40%;
+    }
+    .text{
+        width: 550px;
+    }
+    .text>h2{
+        font-size: 26px;
+    }
+    .text1, .text2, .text3{
+        font-size: 12px;
+    }
+    .box2>iframe{
+        width: 550px;
+        height: 400px;
+    }
+    .box1{
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        top: 0px;
+        left: 5%;
+        background-color: #68b445;
+        z-index: 9;
+    }
+    .box3{
+        z-index: 9;
+        width: 110px;
+        height: 350px;
+        position:absolute;
+        top: 200px;
+        right: 9%;
+        background-color: #ed1f27;
+    }
+    .pp{
+        font-size: 10px;
+    }
+    .p1{
+        left: 10%;
+    }
+    .p2{
+        left:24%;
+    }
+    .p4{
+        left: 40%;
+    }
+    .p6{
+        left: 53.5%;
+    }
+    .p8{
+        left: 75%;
+    }
+}

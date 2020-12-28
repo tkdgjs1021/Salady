@@ -1,0 +1,345 @@
+@charset 'utf-8';
+@font-face {
+    font-family: 'TmoneyRoundWindExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TmoneyRoundWindRegular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.menuname{
+    font-family: 'TmoneyRoundWindExtraBold';
+    color: white;
+    font-size: 72px;
+    position: absolute;
+    top: 372px;
+    left: 46%;
+}
+
+/* Section */
+.location{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #999999;
+}
+.slogan{
+    font-family: 'TmoneyRoundWindExtraBold';
+    font-size: 48px;
+    color: #505050;
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+.borderline{
+    width: 250px;
+    margin: 0 auto;
+    height: 2px;
+    background: black;
+    margin-bottom: 50px;
+}
+.slogan2{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #505050;
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+#section1{
+    margin-bottom: 200px;
+}
+.sector{
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    width: 1160px;
+}
+.circle{
+    border-radius: 50%;
+    z-index: 10;
+    float: left;
+    width: 260px; 
+    height: 410px;
+    border: 3px solid #c3c3c3;
+    color: #505050;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.circle h2{
+    position: relative;
+    top: 160px;
+    font-size: 24px;
+    text-align: center;
+}
+.circle p{
+    display: none;
+    position: relative;
+    top: 150px;
+    font-size:14px;
+    line-height: 24px;
+}
+.c2{
+    margin: 0 20px 0 40px;
+}
+.c3{
+    margin: 0 40px 0 20px;
+}
+.bowl{
+    z-index: 11;
+    position: relative;
+    top: -200px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 618px;
+}
+.bowl>p{
+    position: relative;
+    z-index: 12;
+    top: -465px;
+    opacity: 0.9;
+}
+.bowl>p>img{
+    width: 395px;
+    height: 276px;
+}
+.diagram{
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+}
+.pp{
+    font-family: 'TmoneyRoundWindExtraBold';
+    color: black;
+    font-size: 34px;
+    position: absolute;
+}
+.p1{
+    top: 170px;
+    left: 46.2%;
+}
+.p2{
+    top: 460px;
+    left: 40%;
+}
+.p3{
+    top: 460px;
+    left: 55%;
+}
+.p4{
+    top: 370px;
+    left: 47%;
+}
+
+
+
+/* 767px~1371px */
+@media screen and (min-width:767px) and (max-width:1371px){
+    .menuname{
+        left: 44%;
+    }
+    #section1{
+        margin-bottom: 200px;
+    }
+    .sector{
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+        width: 920px;
+    }
+    .circle{
+        border-radius: 50%;
+        z-index: 10;
+        float: left;
+        width: 200px; 
+        height: 350px;
+        border: 3px solid #c3c3c3;
+        color: #505050;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+    .circle h2{
+        position: relative;
+        top: 100px;
+        font-size: 24px;
+        text-align: center;
+    }
+    .circle p{
+        display: none;
+        position: relative;
+        top: 150px;
+        font-size:14px;
+        line-height: 24px;
+    }
+    .c2{
+        margin: 0 20px 0 40px;
+    }
+    .c3{
+        margin: 0 40px 0 20px;
+    }
+    .bowl{
+        z-index: 11;
+        position: relative;
+        top: -200px;
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        height: 618px;
+    }
+    .bowl>img{
+        width: 75%;
+    }
+    .bowl>p{
+        position: relative;
+        z-index: 12;
+        top: -365px;
+        opacity: 0.9;
+    }
+    .bowl>p>img{
+        width: 295px;
+        height: 176px;
+    }
+    .diagram{
+        position: relative;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .pp{
+        font-family: 'TmoneyRoundWindExtraBold';
+        color: black;
+        font-size: 34px;
+        position: absolute;
+    }
+    .p1{
+        top: 170px;
+        left: 45.2%;
+    }
+    .p2{
+        top: 460px;
+        left: 37%;
+    }
+    .p3{
+        top: 460px;
+        left: 57%;
+    }
+    .p4{
+        top: 370px;
+        left: 46%;
+    }
+}
+
+/* ~766px */
+@media screen and (max-width:766px){
+    .menuname{
+        left: 40%;
+    }
+    #section1{
+        margin-bottom: 200px;
+    }
+    .sector{
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .circle{
+        border-radius: 50%;
+        z-index: 10;
+        float: left;
+        width: 150px; 
+        height: 350px;
+        border: 3px solid #c3c3c3;
+        color: #505050;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+    .circle h2{
+        position: relative;
+        top: 100px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .circle p{
+        display: none;
+        position: relative;
+        top: 150px;
+        font-size:10px;
+        line-height: 24px;
+    }
+    .c1{
+        margin-left: 12px;
+    }
+    .c2{
+        margin: 0 20px 0 40px;
+    }
+    .c3{
+        margin: 0 40px 0 20px;
+    }
+    .bowl{
+        z-index: 11;
+        position: relative;
+        top: -200px;
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        height: 618px;
+    }
+    .bowl>img{
+        width: 100%;
+    }
+    .bowl>p{
+        position: relative;
+        z-index: 12;
+        top: -265px;
+        opacity: 0.9;
+    }
+    .bowl>p>img{
+        width: 245px;
+        height: 126px;
+    }
+    .diagram{
+        position: relative;
+        margin-top: 100px;
+        text-align: center; 
+    }
+    .diagram>img{
+        width: 80%;
+    }
+    .pp{
+        font-family: 'TmoneyRoundWindExtraBold';
+        color: black;
+        font-size: 28px;
+        position: absolute;
+    }
+    .p1{
+        top: 170px;
+        left: 44%;
+    }
+    .p2{
+        top: 380px;
+        left: 31%;
+    }
+    .p3{
+        top: 380px;
+        left: 62%;
+    }
+    .p4{
+        top: 290px;
+        left: 43.8%;
+    }
+}

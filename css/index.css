@@ -1,0 +1,1118 @@
+@charset 'utf-8';
+@font-face {
+    font-family: 'TmoneyRoundWindExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TmoneyRoundWindRegular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* layout */
+html,body,.main{
+    margin:0; padding:0; width:100%; height:100%; position: relative;
+}
+.main1{
+    background: url(../images/main1-1.png)no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main2{
+    background: url(../images/main22.png)no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main3{
+    background: url(../images/main3%20opacity.png)no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.footer{ 
+    height: 180px;
+}
+
+/* navbtn */
+.navbtn{
+    width: 40px;
+    height: 150px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px gray;
+    background-color: white;
+    position: fixed;
+    top: 450px;
+    right: 100px;
+    padding: 30px 0;
+    z-index: 999;
+}
+.navbtn li{
+    margin: 0 auto;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: lightgray;
+    margin-bottom: 10px;
+}
+.navbtn li.on{
+    background-color: #ed1f27;
+}
+.navbtn li a{
+    display: block;
+}
+
+/* Header */
+#header{
+    position: fixed;
+    height: 182px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 100px 0 100px;
+    z-index: 999;
+}
+#header>h2{
+    float: left;
+    margin-bottom: 20px;
+    _width: 526px;
+    width: 31%;
+}
+
+#header #gnb{
+    margin: 0 auto;
+    float: left;
+    height: 130px;
+    line-height: 130px;
+    _width: 670px;
+    width: 39.5%;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'TmoneyRoundWindRegular';
+}
+#gnb>li{
+    float: left;
+    width: 20%;
+}
+#gnb>li>a{
+    color: white;
+    display: block;
+}
+#gnb i{
+    color: #68b445;
+    transform: rotateY(180deg);
+}
+#gnb>li:hover{
+    height: 142px;
+    line-height: 142px;
+}
+.sub>li:hover a{
+    transition: all 0.5s;
+    color: #68b445;
+}
+
+#gnb:hover ~.border{
+    display: none;
+}
+#gnb li:hover .sub{
+    display: block;
+    background: white;
+    transition: all 0.5s;
+}
+
+.sub{
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.sub>li{
+    height: 65px;
+    line-height: 65px;
+}
+.sub>li>a{
+    display: block;
+}
+
+#header h3{
+    float: right;
+    height: 130px;
+    line-height: 130px;
+    width: 150px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'TmoneyRoundWindExtraBold';
+}
+#header h3 a{
+    color: white;
+    border: 2px solid white;
+    padding: 12px 20px 12px 20px;  
+}
+#header .btn{
+    float: right;
+    margin-left: 40px;
+    height: 130px;
+    padding-top: 39px;
+    display: none;
+    _visibility: hidden;
+}
+.border{
+    clear: both;
+    border: 1px solid white;
+}
+
+
+/* 메뉴버튼 클릭시 Header */
+#gnbon{
+    display: none;
+    margin-top: 100px;
+    font-size: 24px;
+    font-family: 'TmoneyRoundWindRegular';
+}
+#gnbon>li{
+    height: 120px;
+}
+#gnbon>li>a:hover{
+    font-weight: bold;
+}
+#gnbon>li>a{
+    color: black;
+    display: block;
+    overflow: hidden;
+}
+.down{
+    float: right;
+}
+#gnbon>li>a>span>i{
+    color: black;
+    font-size: 24px;
+}
+#gnbon>li>a>i{
+    color: #68b445;
+    transform: rotateY(180deg);
+}
+.subon{
+    display: none;
+    font-size: 16px;
+}
+#gnbon>li>.on{
+    display: block;
+}
+.subon>li{
+    height: 30px;
+}
+.subon>li>a{
+    display: block;
+}
+
+/* Section1 */
+#section1{
+    width: 100%;
+    position: relative;
+}
+#section1 .be1{
+    color: black;
+    position: absolute;
+    top: 551px;
+    right: 49.5%;
+    _left: 18%;
+    text-align: right;
+}
+.be1>h1{
+    font-family: 'TmoneyRoundWindExtraBold';
+    font-size: 48px;
+    margin-bottom: 38px;
+    color: white;
+}
+.be1>h2{
+    font-family: 'Nanum Gothic', sans-serif;
+    color: white;
+}
+.be1img{
+    position: absolute;
+    top: 444px;
+    right: 25%;
+}
+.navi{
+    position: fixed;
+    left: 50%;
+    top: 95%;
+    overflow: hidden;
+}
+.pp{
+    float: left;
+}
+.p1{
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    background: white;
+    margin-right: 5px;
+}
+.p2{
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    border: 3px solid white;
+    margin-left: 5px;
+}
+
+/* Section2 */
+.txt{
+    position: relative;
+    top: 254px;
+    text-align: center;
+}
+.txt h1{
+    font-size: 72px;
+    font-family: 'TmoneyRoundWindExtraBold';
+    color: #ed2427;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 3px gray;
+}
+.txt h2{
+    font-size: 24px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.allways{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 314px;
+}
+.allways img{
+    opacity: 0.85;
+}
+.allways a:nth-child(2){
+    margin:0px 50px;
+}
+
+/* section3 */
+.inno{
+    position: relative;
+    top: 300px;
+    color: white;
+}
+.inno h1{
+    font-size: 72px;
+    font-family: 'TmoneyRoundWindExtraBold';
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 3px gray;
+}
+.inno h2{
+    font-size: 24px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+}
+.viewbtn{
+    width: 150px;
+    margin: 0 auto;
+    height: 900px;
+    line-height: 900px;
+    text-align: center;
+}
+.viewbtn a:hover{
+    border:none;
+    background-color: black;
+    transition: all 0.5s;
+}
+.viewbtn a{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'TmoneyRoundWindExtraBold';
+    color: white;
+    border: 2px solid white;
+    padding: 12px 20px;
+}
+
+/* Section4 */
+.hff{
+    position: absolute;
+    left: 285px;
+    top: 405px;
+    color: white;
+    text-align: left;
+    transition: all 0.3s;
+}
+.hff2{
+    position: absolute;
+    _left: 1485px;
+    left: 58%;
+    top: 405px;
+    color: white;
+    text-align: left;
+    z-index: 999;
+    transition: all 0.3s;
+}
+.hff h1{
+    font-size: 72px;
+    font-family: 'TmoneyRoundWindExtraBold';
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 3px gray;
+}
+.hff2 h1{
+    font-size: 72px;
+    font-family: 'TmoneyRoundWindExtraBold';
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 3px gray;
+}
+.hff h2{
+    font-size: 24px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.hff2 h2{
+    font-size: 24px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.viewbtn2{
+    position: absolute;
+    _top: 628px;
+    bottom: 240px;
+    left: 285px;
+    transition: all 0.3s;
+}
+.viewbtn22{
+    position: absolute;
+    _top: 628px;
+    bottom: 240px;
+    _left: 1485px;
+    _left: 56.5%;
+    left: 58%;
+    transition: all 0.3s;
+    z-index: 999;
+}
+.viewbtn2 a:hover{
+    border:none;
+    background-color: black;
+    transition: all 0.3s;
+}
+.viewbtn2 a{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'TmoneyRoundWindExtraBold';
+    color: white;
+    border: 2px solid white;
+    padding: 12px 20px;
+    transition: all 0.3s;
+}
+.viewbtn22 a{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'TmoneyRoundWindExtraBold';
+    color: white;
+    border: 2px solid white;
+    padding: 12px 20px;
+    transition: all 0.3s;
+}
+
+.main4>.bg41{
+    background-color: #68b445;
+    width: 54.25%;
+    height: 100%;
+    position: absolute;
+    _left: 0;
+    transition: all 0.5s;
+}
+.main4>.leftbg41{
+    background: #ed1f27;
+    width: 45.75%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    transition: all 0.5s;
+    z-index: 998;
+}
+
+.main4>.bg4{
+    background-image: url(../images/main4-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 45.75%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transition: all 0.5s;
+}
+.main4>.leftbg4{
+    background-image: url(../images/main4-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 54.25%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.right{
+    z-index: 998;
+    position: absolute;
+    bottom: 100px;
+    right: 42.5%;
+    _left:50px;
+    transition: all 0.5s;
+}
+.left{
+    z-index: 998;
+    position: absolute;
+    bottom: 100px;
+    right: 47.5%;
+    _left:-100px;
+    transition: all 0.5s;
+}
+
+
+/* Footer */
+#foot{
+    background-color:#eaeaea;
+    overflow: hidden;
+    height: 180px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 100px 25px 100px;
+}
+#foot h2{
+    text-align: left;
+    float: left;
+    width: 25%;
+}
+.address{
+    margin-top: 44px;
+    margin-bottom: 44px;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.address p{
+    font-size: 12px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.address .txt1{
+    margin-bottom: 10px;
+}
+.address .txt2{
+    margin-top: 10px;
+}
+#foot>h3{
+    margin-top:60px;
+    margin-bottom: 60px;
+    width: 25%;
+    text-align: right;
+    float: left;
+    font-size: 12px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+/* 767px~1371px */
+@media screen and (min-width:767px) and (max-width:1371px){
+    /* Header */
+    #gnb{
+        display: none;
+    }
+    #header .btn{
+        display: block;
+    }
+    
+    /* Section1 */
+    .be1>h1{
+        font-family: 'TmoneyRoundWindExtraBold';
+        font-size: 36px;
+        margin-bottom: 38px;
+        color: white;
+    }
+    .be1>h2{
+        font-family: 'Nanum Gothic', sans-serif;
+        color: white;
+        font-size: 18px;
+    }
+    .be1img{
+        width: 150px;
+        position: absolute;
+        top: 551px;
+        right: 25%;
+    }
+    .be1img img{
+        width: 100%;
+    }
+    
+    /* Section2 */
+    .txt h1{
+        font-size: 54px;
+        font-family: 'TmoneyRoundWindExtraBold';
+        color: #ed2427;
+        margin-bottom: 30px;
+        text-shadow: 3px 3px 3px gray;
+    }
+    .txt h2{
+        font-size: 20px;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .allways{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        top: 314px;
+    }
+    .allways img{
+        width: 200px; height: 200px;
+        opacity: 0.85;
+    }
+    .allways a:nth-child(2){
+        margin:0 50px;
+    }
+    
+    /* section3 */
+    .inno{
+        position: relative;
+        top: 300px;
+        color: white;
+    }
+    .inno h1{
+        font-size: 54px;
+        font-family: 'TmoneyRoundWindExtraBold';
+        text-align: center;
+        margin-bottom: 30px;
+        text-shadow: 3px 3px 3px gray;
+    }
+    .inno h2{
+        font-size: 20px;
+        font-family: 'Nanum Gothic', sans-serif;
+        text-align: center;
+    }
+    .viewbtn{
+        width: 150px;
+        margin: 0 auto;
+        height: 900px;
+        line-height: 900px;
+        text-align: center;
+    }
+    .viewbtn a:hover{
+        border:none;
+        background-color: black;
+        transition: all 0.5s;
+    }
+    .viewbtn a{
+        text-align: center;
+        font-size: 18px;
+        font-family: 'TmoneyRoundWindExtraBold';
+        color: white;
+        border: 2px solid white;
+        padding: 12px 20px;
+    }
+    
+    /* Section4 */
+    .hff{
+        position: absolute;
+        left: 100px;
+        top: 405px;
+        color: white;
+        text-align: left;
+        transition: all 0.3s;
+    }
+    .hff2{
+        position: absolute;
+        _left: 1485px;
+        left: 58%;
+        top: 405px;
+        color: white;
+        text-align: left;
+        z-index: 999;
+        transition: all 0.3s;
+    }
+    .hff h1{
+        font-size: 54px;
+        font-family: 'TmoneyRoundWindExtraBold';
+        margin-bottom: 30px;
+        text-shadow: 3px 3px 3px gray;
+    }
+    .hff2 h1{
+        font-size: 54px;
+        font-family: 'TmoneyRoundWindExtraBold';
+        margin-bottom: 30px;
+        text-shadow: 3px 3px 3px gray;
+    }
+    .hff h2{
+        font-size: 18px;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .hff2 h2{
+        font-size: 18px;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .viewbtn2{
+        position: absolute;
+        _top: 628px;
+        bottom: 240px;
+        left: 100px;
+        transition: all 0.3s;
+    }
+    .viewbtn22{
+        position: absolute;
+        _top: 628px;
+        bottom: 240px;
+        _left: 1485px;
+        _left: 56.5%;
+        left: 58%;
+        transition: all 0.3s;
+        z-index: 999;
+    }
+    .viewbtn2 a:hover{
+        border:none;
+        background-color: black;
+        transition: all 0.3s;
+    }
+    .viewbtn2 a{
+        text-align: center;
+        font-size: 18px;
+        font-family: 'TmoneyRoundWindExtraBold';
+        color: white;
+        border: 2px solid white;
+        padding: 12px 20px;
+        transition: all 0.3s;
+    }
+    .viewbtn22 a{
+        text-align: center;
+        font-size: 18px;
+        font-family: 'TmoneyRoundWindExtraBold';
+        color: white;
+        border: 2px solid white;
+        padding: 12px 20px;
+        transition: all 0.3s;
+    }
+
+    .main4>.bg41{
+        background-color: #68b445;
+        width: 54.36%;
+        height: 100%;
+        position: absolute;
+        _left: 0;
+        transition: all 0.5s;
+    }
+    .main4>.leftbg41{
+        background: #ed1f27;
+        width: 45.64%;
+        height: 100%;
+        position: absolute;
+        right: 0px;
+        transition: all 0.5s;
+        z-index: 998;
+    }
+
+    .main4>.bg4{
+        background-image: url(../images/main4-1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 45.64%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        transition: all 0.5s;
+    }
+    .main4>.leftbg4{
+        background-image: url(../images/main4-2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 54.36%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        transition: all 0.5s;
+    }
+
+    .right{
+        z-index: 999;
+        position: absolute;
+        bottom: 100px;
+        right: 42.5%;
+        _left:50px;
+        transition: all 0.5s;
+    }
+    .left{
+        z-index: 999;
+        position: absolute;
+        bottom: 100px;
+        right: 47.5%;
+        _left:-100px;
+        transition: all 0.5s;
+    }
+
+}
+@media screen and (max-width:766px){
+     /* Header */
+    #gnb{
+        display: none;
+    }
+    #header>h2{
+        float: left;
+        margin-top: 20px;
+        width: 40%;
+    }
+    #header>h2>a>img{
+        width: 80%;
+    }
+    #header h3{
+        float: right;
+        height: 130px;
+        line-height: 130px;
+        width: 100px;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'TmoneyRoundWindExtraBold';
+        transition: none;
+    }
+    #header h3 a{
+        color: white;
+        border: 2px solid white;
+        padding: 8px 12px 8px 12px; 
+        transition: none;
+    }
+    #header .btn{
+        text-align: right;
+        float: right;
+        margin-left: 0px;
+        height: 90px;
+        padding-top: 48px;
+        display: block;
+    }
+    .btn>a>img{
+        width: 50%;
+    }
+    .border{
+        clear: both;
+        border: 1px solid white;
+    }
+    
+    /* Section1 */
+    .be1{
+        z-index: 999;
+    }
+    .be1>h1{
+        font-family: 'TmoneyRoundWindExtraBold';
+        font-size: 24px;
+        margin-bottom: 38px;
+        color: white;
+    }
+    .be1>h2{
+        font-family: 'Nanum Gothic', sans-serif;
+        color: white;
+        font-size: 12px;
+    }
+    .be1img{
+        width: 250px;
+        position: absolute;
+        top: 380px;
+        right: 28%;
+        z-index: 997;
+    }
+    .be1img img{
+        width: 100%;
+    }
+    
+    /* Section2 */
+    .txt h1{
+        font-size: 36px;
+        font-family: 'TmoneyRoundWindExtraBold';
+        color: #ed2427;
+        margin-bottom: 30px;
+        text-shadow: 3px 3px 3px gray;
+    }
+    .txt h2{
+        font-size: 16px;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .allways{
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        top: 314px;
+    }
+    .allways img{
+        width: 150px; height: 150px;
+        opacity: 0.85;
+        margin: 10px;
+    }
+    
+    /* section3 */
+    .inno{
+        position: relative;
+        top: 300px;
+        color: white;
+    }
+    .inno h1{
+        font-size: 36px;
+        font-family: 'TmoneyRoundWindExtraBold';
+        text-align: center;
+        margin-bottom: 30px;
+        text-shadow: 3px 3px 3px gray;
+    }
+    .inno h2{
+        font-size: 16px;
+        font-family: 'Nanum Gothic', sans-serif;
+        text-align: center;
+    }
+    .viewbtn{
+        width: 150px;
+        margin: 0 auto;
+        height: 900px;
+        line-height: 900px;
+        text-align: center;
+    }
+    .viewbtn a:hover{
+        border:none;
+        background-color: black;
+        transition: all 0.5s;
+    }
+    .viewbtn a{
+        text-align: center;
+        font-size: 18px;
+        font-family: 'TmoneyRoundWindExtraBold';
+        color: white;
+        border: 2px solid white;
+        padding: 12px 20px;
+    }
+    
+    /* Section4 */
+    .hff{
+        position: absolute;
+        left: 100px;
+        top: 405px;
+        color: white;
+        text-align: left;
+        transition: all 0.3s;
+    }
+    .hff2{
+        position: absolute;
+        _left: 1485px;
+        left: 58%;
+        top: 405px;
+        color: white;
+        text-align: left;
+        z-index: 999;
+        transition: all 0.3s;
+    }
+    .hff h1{
+        font-size: 36px;
+        font-family: 'TmoneyRoundWindExtraBold';
+        margin-bottom: 30px;
+        text-shadow: 3px 3px 3px gray;
+    }
+    .hff2 h1{
+        font-size: 36px;
+        font-family: 'TmoneyRoundWindExtraBold';
+        margin-bottom: 30px;
+        text-shadow: 3px 3px 3px gray;
+    }
+    .hff h2{
+        font-size: 12px;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .hff2 h2{
+        font-size: 12px;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .viewbtn2{
+        position: absolute;
+        _top: 628px;
+        bottom: 240px;
+        left: 100px;
+        transition: all 0.3s;
+    }
+    .viewbtn22{
+        position: absolute;
+        _top: 628px;
+        bottom: 240px;
+        _left: 1485px;
+        _left: 56.5%;
+        left: 58%;
+        transition: all 0.3s;
+        z-index: 999;
+    }
+    .viewbtn2 a:hover{
+        border:none;
+        background-color: black;
+        transition: all 0.3s;
+    }
+    .viewbtn2 a{
+        text-align: center;
+        font-size: 18px;
+        font-family: 'TmoneyRoundWindExtraBold';
+        color: white;
+        border: 2px solid white;
+        padding: 12px 20px;
+        transition: all 0.3s;
+    }
+    .viewbtn22 a{
+        text-align: center;
+        font-size: 18px;
+        font-family: 'TmoneyRoundWindExtraBold';
+        color: white;
+        border: 2px solid white;
+        padding: 12px 20px;
+        transition: all 0.3s;
+    }
+
+    .main4>.bg41{
+        background-color: #68b445;
+        width: 54.36%;
+        height: 100%;
+        position: absolute;
+        _left: 0;
+        transition: all 0.5s;
+    }
+    .main4>.leftbg41{
+        background: #ed1f27;
+        width: 45.64%;
+        height: 100%;
+        position: absolute;
+        right: 0px;
+        transition: all 0.5s;
+        z-index: 998;
+    }
+
+    .main4>.bg4{
+        background-image: url(../images/main4-1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 45.64%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        transition: all 0.5s;
+    }
+    .main4>.leftbg4{
+        background-image: url(../images/main4-2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 54.36%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        transition: all 0.5s;
+    }
+
+    .right{
+        z-index: 999;
+        position: absolute;
+        bottom: 100px;
+        right: 37.5%;
+        _left:50px;
+        transition: all 0.5s;
+    }
+    .left{
+        z-index: 999;
+        position: absolute;
+        bottom: 100px;
+        right: 48.5%;
+        _left:-100px;
+        transition: all 0.5s;
+    }
+    
+    /* Footer */
+    #foot{
+        background-color:#eaeaea;
+        _overflow: hidden;
+        height: 180px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px 100px 25px 100px;
+    }
+    #foot h2{
+        text-align: left;
+        _float: left;
+        _width: 25%;
+        float: none;
+    }
+    #foot h2 img{
+        width: 50%;
+    }
+    .address{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        _float: left;
+        _width: 50%;
+        float: none;
+        text-align: left;
+    }
+    .address p{
+        font-size: 10px;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .address .txt1{
+        margin-bottom: 5px;
+    }
+    .address .txt2{
+        margin-top: 5px;
+    }
+    #foot>h3{
+        margin-top:15px;
+        margin-bottom: 10px;
+        _width: 25%;
+        text-align: left;
+        _float: left;
+        float: none;
+        font-size: 10px;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    
+}
+
+@media screen and (max-width:909px){
+    #foot{
+        background-color:#eaeaea;
+        _overflow: hidden;
+        height: 180px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px 100px 25px 100px;
+    }
+    #foot h2{
+        text-align: left;
+        _float: left;
+        _width: 25%;
+        float: none;
+    }
+    #foot h2 img{
+        width: 50%;
+    }
+    .address{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        _float: left;
+        _width: 50%;
+        float: none;
+        text-align: left;
+    }
+    .address p{
+        font-size: 10px;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .address .txt1{
+        margin-bottom: 5px;
+    }
+    .address .txt2{
+        margin-top: 5px;
+    }
+    #foot>h3{
+        margin-top:15px;
+        margin-bottom: 10px;
+        _width: 25%;
+        text-align: left;
+        _float: left;
+        float: none;
+        font-size: 10px;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+}
